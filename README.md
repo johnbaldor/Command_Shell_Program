@@ -1,20 +1,17 @@
 doit Command Shell Program
-This program executes commands in a Linux environment and provides detailed statistics about system resource usage, 
-including CPU time, wall-clock time, and page faults. It can also function as a basic command shell, handling built-in commands,
-changing directories, and executing background tasks.
-
+This program executes commands in a Linux environment and provides detailed statistics about system resource usage, including CPU time, wall-clock time, and page faults. It can also function as a basic command shell, handling built-in commands, changing directories, and executing background tasks.
 
 To compile the program, run the command:
 gcc doit.c -o doit
 
 To run the program with a command, use:
-bash
 ./doit [command] [arguments]
 
-To run the program as a shell, use:
-bash
-./doit
+Example:
+./doit wc foo.txt
 
+To run the program as a shell, use:
+./doit
 
 Features
 Command Execution: Executes any valid Linux command and provides resource usage statistics (CPU time, page faults, etc.).
